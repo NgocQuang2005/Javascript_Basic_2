@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hide {
+  display: none !important;
+}
+
+.menub2 {
+  list-style-type: none;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 0;
+  width: 100px;
+  margin: 0;
+}
+
+.menu-itemb2 {
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(66, 66, 66);
+  transition: background-color linear 0.8ms;
+}
+
+.menu-itemb2:last-child {
+  border: none;
+}
+
+.menu-itemb2:hover {
+  background-color: rgb(205, 205, 205);
+}
+
+.menu-itemb2 a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+}
+
+#select-menub2 {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.bgcolorb3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(19, 18, 18);
+}
+
+.err {
+  color: red;
+  margin-top: 5px;
+}
+/*b5*/
+.slideb5 {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.slider-main {
+  display: flex;
+  position: relative;
+  transition: transform 0.2s linear;
+  height: 100%;
+}
+.slider-item {
+  width: 100%;
+  height: 100%;
+  /* flex-grow: 1 =>cho phep no dan ra */
+  /* flex-shrink: 0=>khong cho phep no co lai */
+  /* flex-basic: 100%=>de cho slider-item do luon luon full */
+  flex: 1 0 100%;
+  user-select: none;
+}
+
+.chevron {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 15px;
+  text-align: center;
+  transform: translateY(-50%);
+  background-color: rgba(255, 0, 0, 0.23);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.chevron:hover {
+  background-color: #ffffffe4;
+  color: rgba(255, 0, 0, 0.507);
+}
+#next {
+  right: 0;
+}
+/* b7 */
+.light {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #d1c7c7e4;
+}
+.bgColorLight {
+  background-color: red;
+}
+/* b8 */
+.progress-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 30px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  transition: width 0.3s ease;
+}

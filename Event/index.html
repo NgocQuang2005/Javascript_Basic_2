@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Event</h1>
+    <!-- 1 -->
+    <div>
+        <h2>Bài 1</h2>
+        <p>Viết chương trình JavaScript tạo một nút và thêm trình lắng nghe sự kiện nhấp chuột để ghi lại thông báo khi
+            nút đó được nhấp vào.</p>
+        <button onclick="b1()">Click</button>
+    </div>
+    <!-- 2 -->
+    <div>
+        <h2>Bài 2</h2>
+        <p>Viết chương trình JavaScript để tạo menu thả xuống có chức năng hiển thị và ẩn các tùy chọn khi nhấp vào.</p>
+        <div>
+            <p id="select-menub2">Select a Subject</p>
+            <ul class="menub2 hide">
+                <li class="menu-itemb2"><a href="#">Math</a></li>
+                <li class="menu-itemb2"><a href="#">English</a></li>
+                <li class="menu-itemb2"><a href="#">Physics</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div>
+        <h2>Bài 3</h2>
+        <p>Viết hàm JavaScript để thay đổi màu nền của một phần tử khi chuột di chuyển vào phần tử đó.</p>
+        <div>
+            <p class="bgcolorb3"></p>
+            <button onclick="b3()">Click đổi màu nền</button>
+        </div>
+    </div>
+    <!-- 4 -->
+    <div>
+        <h2>Bài 4</h2>
+        <p>Viết chương trình JavaScript thực hiện xác thực "biểu mẫu" hiển thị thông báo lỗi nếu trường bắt buộc bị bỏ
+            trống khi gửi biểu mẫu.</p>
+        <div>
+            <form action="" id="myform">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="err"></p>
+            <strong>Chưa làm xog</strong>
+        </div>
+    </div>
+    <!-- 5 -->
+    <div>
+        <h2>Bài 5</h2>
+        <p>Viết chương trình JavaScript để tạo trình chiếu có chức năng thay đổi hình ảnh hiển thị khi nhấp vào nút tiếp
+            theo hoặc nút trước đó.</p>
+        <div class="slideb5">
+            <span id="prev" class="chevron">Prev</span>
+            <div class="slider-wrapper">
+                <div class="slider-main">
+                    <div class="slider-item">
+                        <img src="https://file.hstatic.net/200000722513/file/messi___15__f5354ca06bd84b3b8e6a29a185d20683.jpg"
+                            alt="" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://cdn.tgdd.vn//GameApp/-1//maytinh-11-800x450.jpg" alt="" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://e0.pxfuel.com/wallpapers/466/556/desktop-wallpaper-%E1%BA%A2nh-n%E1%BB%81n-messi-cho-laptop-pc.jpg"
+                            alt="" />
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://file.hstatic.net/200000482865/file/hinh_nen_messi_dep_nhat__8__54204ee45db2424aaa517c955164e758.jpg"
+                            alt="" />
+                    </div>
+                </div>
+            </div>
+            <span id="next" class="chevron">next</span>
+        </div>
+
+    </div>
+    <!-- 6 -->
+    <div>
+        <strong>Chưa hoàn thành</strong>
+    </div>
+    <!-- 7 -->
+    <div>
+        <h2>Bài 7</h2>
+        <p>Viết chương trình JavaScript để triển khai công tắc bật tắt có khả năng thay đổi trạng thái khi được nhấp
+            vào.</p>
+        <div class="light"></div>
+        <button id="toggle_light">Bật bóng</button>
+    </div>
+    <!-- 8 -->
+    <div>
+        <h2>Bài 8</h2>
+        <p>Viết chương trình JavaScript để tạo thanh tiến trình có khả năng cập nhật chiều rộng dựa trên mức độ hoàn
+            thành nhiệm vụ.</p>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">0%</div>
+        </div>
+
+        <input type="number" id="inputPercent" placeholder="Nhập phần trăm (0-100)" />
+        <button onclick="updateProgress()">Cập nhật tiến độ</button>
+    </div>
+    <!-- 9 -->
+    <div>
+        <h2>Bài 9</h2>
+        <p>Viết chương trình JavaScript thêm trình lắng nghe sự kiện keydown vào đầu vào văn bản để phát hiện thời điểm
+            nhấn "phím Enter".</p>
+        <input type="text" id="textInput" placeholder="Nhập gì đó và nhấn enter">
+        <p id="resultb9"></p>
+    </div>
+    <!-- 10 -->
+    <div>
+        <h2>Bài 10</h2>
+        <p>Viết một hàm JavaScript để lắng nghe hành động nhấp đúp chuột vào một phần tử và thực hiện một hành động cụ
+            thể.</p>
+        <button id="dbclickb10">Click</button>
+        <p id="resultb10"></p>
+    </div>
+    <!-- 11 -->
+    <div>
+        <h2>Bài 11</h2>
+        <p>Viết chương trình JavaScript để xử lý các sự kiện nhấp chuột vào các mục danh sách được thêm động bằng cách
+            sử dụng phân quyền sự kiện.</p>
+        <strong>Chưa hoàn thành</strong>
+    </div>
+    <!-- 12 -->
+    <div>
+        <h2>bài 12</h2>
+        <p>Viết chương trình JavaScript để ngăn chặn hành vi mặc định của việc gửi biểu mẫu và ghi lại các giá trị đầu
+            vào vào bảng điều khiển.</p>
+        <form id="myFormb12">
+            <input type="text" id="nameInputb12" placeholder="Tên của bạn" />
+            <input type="email" id="emailInputb12" placeholder="Email của bạn" />
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+    <!-- 13 -->
+    <div>
+        <h2>bài 13</h2>
+        <p>Viết chương trình JavaScript minh họa sự kiện nổi bọt và sử dụng stopPropagation để dừng sự kiện ở một cấp độ
+            cụ thể.</p>
+        <div onclick="Check()">
+            okok
+            <button id="nbb13">Click</button>
+        </div>
+    </div>
+    <!-- 14 -->
+    <div>
+        <h2>Bài 14</h2>
+        <p>Viết chương trình JavaScript minh họa cách ghi lại sự kiện bằng cách thêm trình lắng nghe vào phần tử cha và
+            phần
+            tử con.</p>
+        <div id="parent">
+            phần tử cha
+            <button id="childen">phần tử con</button>
+        </div>
+    </div>
+    <!-- 15 -->
+    <div>
+        <h2>Bài 15</h2>
+        <p>Viết chương trình JavaScript để hủy sự kiện nhập của hộp văn bản và chờ trước khi thực hiện lệnh gọi API.</p>
+        <input type="text" id="searchBox" placeholder="Nhập để tìm kiếm quốc gia" />
+    </div>
+    <!-- 16 -->
+    <div>
+        <h2>Bài 16</h2>
+        <p>Viết chương trình JavaScript triển khai bộ đếm sử dụng localStorage để lưu số đếm qua mỗi lần làm mới trang.
+        </p>
+        <p id="localResult"></p>
+    </div>
+    <!-- 17 -->
+    <div>
+        <h2>Bài 17</h2>
+        <p>Viết chương trình JavaScript để mô phỏng giỏ hàng trong đó trạng thái giỏ hàng được lưu trữ trong
+            sessionStorage.</p>
+        <strong>Chưa hoàn thành</strong>
+    </div>
+    <!-- 18 -->
+    <div>
+        <h2>Bài 18</h2>
+        <p>Viết chương trình JavaScript để lấy dữ liệu từ API, xử lý lỗi mạng và hiển thị kết quả trên trang web.</p>
+        <input type="text" id="searchQgb18" placeholder="tìm kiếm quốc gia...">
+        <button id="btnSearch">Search</button>
+        <p id="quocgia"></p>
+        <p id="thudo"></p>
+        <p id="dientich"></p>
+        <p id="danso"></p>
+        <p id="err"></p>
+    </div>
+    <script src="Bai1.js"></script>
+    <script src="Bai2.js"></script>
+    <script src="Bai3.js"></script>
+    <script src="Bai4.js"></script>
+    <script src="Bai5.js"></script>
+    <script src="Bai6.js"></script>
+    <script src="Bai7.js"></script>
+    <script src="Bai8.js"></script>
+    <script src="Bai9.js"></script>
+    <script src="Bai10.js"></script>
+    <script src="Bai11.js"></script>
+    <script src="Bai12.js"></script>
+    <script src="Bai13.js"></script>
+    <script src="Bai14.js"></script>
+    <script src="Bai15.js"></script>
+    <script src="Bai16.js"></script>
+    <script src="Bai17.js"></script>
+    <script src="Bai18.js"></script>
+    <script src="Bai19.js"></script>
+    <script src="Bai20.js"></script>
+    <script src="Bai21.js"></script>
+</body>
+
+</html>
