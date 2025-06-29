@@ -140,3 +140,20 @@ img {
   line-height: 30px;
   transition: width 0.3s ease;
 }
+/* bài 6 */
+#listb6 {
+  list-style: none;
+  padding: 0;
+  width: 200px;
+}
+#listb6 li {
+  padding: 10px;
+  margin: 5px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: grab;
+  user-select: none;
+}
+.dragging {
+  opacity: 0.5;
+}
